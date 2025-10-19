@@ -1,32 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_all_widget_practice/text_widget.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter App ',
-      home: HomeScreen(),
-    ),
-  );
+  runApp(MyApp());
 }
 
-class HomeScreen extends StatelessWidget {
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Text(
-          'Flutter App',
-          style: TextStyle(
-            fontSize: 33,
-            color: Colors.red,
-            fontWeight: FontWeight.w600,
-            //backgroundColor: Colors.black,
-            debugLabel: '2',
-            decoration: TextDecoration.underline,
-          ),
-        ),
-      ),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: TextWidget());
   }
 }
