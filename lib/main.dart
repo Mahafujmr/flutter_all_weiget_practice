@@ -10,6 +10,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: TextWidget());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      // change ui screen => dark color
+      //darkTheme: ThemeData.dark(),
+      // britghtness => light or dark
+      //theme: ThemeData(brightness: Brightness.light),
+      theme: ThemeData(hintColor: Colors.red),
+      // easy navigation for screen
+      // routes: ,
+
+      // app launch and first screen show
+      //initialRoute: ,
+      color: Colors.red,
+      // builder is call back function
+      //builder: (context, child) => ,
+
+      home: TextWidget(),
+    );
   }
 }
