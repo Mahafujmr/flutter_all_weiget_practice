@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget_practice/image_widget/icon_widget.dart';
+import 'package:flutter_all_widget_practice/image_widget/image_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: IconWidget(),
+      home: ImageWidget(),
     );
   }
 }

@@ -11,7 +11,13 @@ class IconWidget extends StatelessWidget {
         backgroundColor: Colors.grey,
         centerTitle: true,
       ),
-      body: Center(child: Icon(Icons.ad_units, size: 200, color: Colors.red)),
+      body: Column(
+        children: [
+          Icon(Icons.ad_units, size: 200, color: Colors.red),
+          Icon(Icons.access_alarms_rounded, size: 200),
+          Icon(Icons.account_circle_outlined, size: 200),
+        ],
+      ),
     );
   }
 }
