@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/text_widget.dart';
+import 'package:flutter_all_widget_practice/center_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,10 +23,10 @@ class MyApp extends StatelessWidget {
       // app launch and first screen show
       //initialRoute: ,
       color: Colors.red,
+
       // builder is call back function
       //builder: (context, child) => ,
-
-      home: TextWidget(),
+      home: CenterWidget(),
     );
   }
 }

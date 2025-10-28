@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter App',
-      home: TextWidget(),
-    ),
-  );
-}
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       title: 'Flutter App',
+//       home: TextWidget(),
+//     ),
+//   );
+// }
 
 class TextWidget extends StatelessWidget {
   const TextWidget({super.key});
@@ -53,3 +53,4 @@ class TextWidget extends StatelessWidget {
     );
   }
 }
+// flutter text widget all properties practice 
