@@ -19,6 +19,13 @@ class ImageWidget extends StatelessWidget {
             Image.network(
               'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Zo3WyfVe9W8Pc74KkKUbJtHPmkXTavDrTCdUHuUJU0kq_S5PuKfXayQ&s',
             ),
+            Text('This is asset Image', style: TextStyle(fontSize: 33)),
+            Image.asset(
+              'images/quran.jpeg',
+              alignment: Alignment.bottomCenter,
+              cacheHeight: 200,
+              fit: BoxFit.scaleDown,
+            ),
           ],
         ),
       ),
