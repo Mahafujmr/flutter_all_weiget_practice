@@ -32,13 +32,18 @@ class ImageWidget extends StatelessWidget {
             ),
             SizedBox(height: 20),
             Text('Asset Image', style: TextStyle(fontSize: 30)),
-            Image.asset('images/laptop.jpeg'),
-            // file image
-            Image.file(
-              File(
-                'c:\Users\Trust Computer\OneDrive\Desktop\flutter intern.png',
-              ),
+            Image.asset(
+              'images/laptop.jpeg',
+              color: Colors.red,
+              // image color change
+              colorBlendMode: BlendMode.colorBurn,
             ),
+            // file image not support flutter web
+            // Image.file(
+            //   File(
+            //     'C:\Users\Trust Computer\OneDrive\Pictures\Screenshots 1'
+            //   ),
+            // ),
           ],
         ),
       ),
