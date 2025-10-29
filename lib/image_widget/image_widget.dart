@@ -1,4 +1,6 @@
 // flutter image widget
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class ImageWidget extends StatelessWidget {
@@ -16,10 +18,12 @@ class ImageWidget extends StatelessWidget {
         child: Column(
           children: [
             Text('This is netwrok Image', style: TextStyle(fontSize: 33)),
+            // network image
             Image.network(
               'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Zo3WyfVe9W8Pc74KkKUbJtHPmkXTavDrTCdUHuUJU0kq_S5PuKfXayQ&s',
             ),
             Text('This is asset Image', style: TextStyle(fontSize: 33)),
+            // asset image
             Image.asset(
               'images/quran.jpeg',
               alignment: Alignment.bottomCenter,
@@ -29,6 +33,12 @@ class ImageWidget extends StatelessWidget {
             SizedBox(height: 20),
             Text('Asset Image', style: TextStyle(fontSize: 30)),
             Image.asset('images/laptop.jpeg'),
+            // file image
+            Image.file(
+              File(
+                'c:\Users\Trust Computer\OneDrive\Desktop\flutter intern.png',
+              ),
+            ),
           ],
         ),
       ),
