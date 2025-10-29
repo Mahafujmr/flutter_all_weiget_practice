@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/image_widget/image_widget.dart';
+import 'package:flutter_all_widget_practice/image_widget/circle_avatar_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ImageWidget(),
+      home: CircleAvatarWidget(),
     );
   }
 }
