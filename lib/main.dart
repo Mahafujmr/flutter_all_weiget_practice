@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/image_widget/circle_avatar_widget.dart';
 import 'package:flutter_all_widget_practice/layout_widgets/row_widget.dart';
 
 void main() {

@@ -20,6 +20,7 @@ class RowWidget extends StatelessWidget {
         child: Center(
           // horizontal every widget and properties
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             //spacing: 20, // every widget horizontal space
             // textDirection: TextDirection.ltr,=> text direction
             textBaseline: TextBaseline.alphabetic,
@@ -29,9 +30,6 @@ class RowWidget extends StatelessWidget {
               Text('Tuhin Mahafuj'),
               Text('Tuhin'),
               Text('Tuhin'),
-              Icon(Icons.computer),
-              Text('Tuhin Hossin and mr tuhin  '),
-              Image.asset('images/laptop.jpeg'),
               Icon(Icons.computer),
             ],
           ),
