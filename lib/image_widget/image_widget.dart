@@ -43,6 +43,7 @@ class ImageWidget extends StatelessWidget {
             //     'C:\Users\Trust Computer\OneDrive\Pictures\Screenshots 1'
             //   ),
             // ),
+            Text('Asset Image', style: TextStyle(fontSize: 30)),
           ],
         ),
       ),

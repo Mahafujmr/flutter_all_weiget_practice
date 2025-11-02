@@ -1,6 +1,5 @@
 // dart row widget
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class RowWidget extends StatelessWidget {
   const RowWidget({super.key});
@@ -15,24 +14,20 @@ class RowWidget extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        child: Center(
-          // horizontal every widget and properties
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            //spacing: 20, // every widget horizontal space
-            // textDirection: TextDirection.ltr,=> text direction
-            textBaseline: TextBaseline.alphabetic,
-            children: [
-              Text('Tuhin'),
-              Text('Tuhin Hossain'),
-              Text('Tuhin Mahafuj'),
-              Text('Tuhin'),
-              Text('Tuhin'),
-              Icon(Icons.computer),
-            ],
-          ),
+      body: Center(
+        // horizontal every widget and properties
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+          //spacing: 20, // every widget horizontal space
+          // textDirection: TextDirection.ltr,=> text direction
+          children: [
+            Text('Tuhin'),
+            Text('Tuhin '),
+            Text('Tuhin '),
+            Text('Tuhin'),
+            Text('Tuhin'),
+          ],
         ),
       ),
     );
