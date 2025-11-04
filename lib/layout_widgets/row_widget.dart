@@ -17,7 +17,7 @@ class RowWidget extends StatelessWidget {
       body: Center(
         // horizontal every widget and properties
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
           //spacing: 20, // every widget horizontal space
           // textDirection: TextDirection.ltr,=> text direction
