@@ -22,7 +22,7 @@ class ColumnWidget extends StatelessWidget {
           crossAxisAlignment => Horizontal(Right to left)
           */
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text('Tuhin', style: TextStyle(fontSize: 33)),
             Text('Tuhin', style: TextStyle(fontSize: 33)),

@@ -18,7 +18,10 @@ class RowWidget extends StatelessWidget {
         height: 300,
         color: Colors.red,
         child: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          /*
+          MainAxisAlignment = > Horizontal work(Right to left)
+          CrossAxisAlignment => Vertical(Top to Buttom)
+          */
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           //use container because crossAxis alignment behaviour show
           crossAxisAlignment: CrossAxisAlignment.center,
