@@ -14,16 +14,24 @@ class ColumnWidget extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Text('Tuhin', style: TextStyle(fontSize: 33)),
-          Text('Tuhin', style: TextStyle(fontSize: 33)),
-          Text('Tuhin', style: TextStyle(fontSize: 33)),
-          Text('Tuhin', style: TextStyle(fontSize: 33)),
-          Text('Tuhin', style: TextStyle(fontSize: 33)),
-          Text('Tuhin', style: TextStyle(fontSize: 33)),
-        ],
+      body: Container(
+        width: 300,
+        child: Column(
+          /*
+          mainAxisAlignment = >Vertical(Top to Buttom)
+          crossAxisAlignment => Horizontal(Right to left)
+          */
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            Text('Tuhin', style: TextStyle(fontSize: 33)),
+            Text('Tuhin', style: TextStyle(fontSize: 33)),
+            Text('Tuhin', style: TextStyle(fontSize: 33)),
+            Text('Tuhin', style: TextStyle(fontSize: 33)),
+            Text('Tuhin', style: TextStyle(fontSize: 33)),
+            Text('Tuhin', style: TextStyle(fontSize: 33)),
+          ],
+        ),
       ),
     );
   }
