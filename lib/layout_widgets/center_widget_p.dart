@@ -15,6 +15,7 @@ class CenterWidgetP extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
+        // center widget all child widget middle
         child: Container(
           width: 300,
           height: 300,
