@@ -34,7 +34,6 @@ class ContainerWidget extends StatelessWidget {
             image: DecorationImage(
               image: AssetImage('images/laptop.jpeg'),
               fit: BoxFit.scaleDown,
-              scale: 10,
             ),
           ),
         ),
