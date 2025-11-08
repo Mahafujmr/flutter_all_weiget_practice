@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/layout_widgets/padding_margin_widget.dart';
-import 'package:flutter_all_widget_practice/layout_widgets/sizedbox_widget.dart';
+import 'package:flutter_all_widget_practice/layout_widgets/align_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +26,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: PaddingMarginWidget(),
+      home: AlignWidget(),
     );
   }
 }
