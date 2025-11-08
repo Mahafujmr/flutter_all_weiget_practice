@@ -162,5 +162,21 @@ Container-এর মধ্যে থাকা widget-কে (child) নির্
 > তাহলে `widthFactor` এবং `heightFactor` ব্যবহার করো।
 
 ---
+## 💡 কখন Align Widget ব্যবহার করবেন?
+
+### ✅ Align ব্যবহার করুন যখন:
+
+1. **Simple alignment প্রয়োজন** - শুধু position change করতে হবে, size নয়
+2. **Child এর size বজায় রাখতে হবে** - Expanded/Flexible এর মতো stretch করবে না
+3. **Stack এর alternative হিসেবে** - যখন শুধু একটি child align করতে হবে
+4. **Relative positioning** - Parent এর relative position এ রাখতে হবে
+5. **Badge, icon, label positioning** - ছোট element position করতে
+
+### ❌ Align ব্যবহার করবেন না যখন:
+
+1. **Multiple children align করতে হবে** - এক্ষেত্রে `Row`, `Column`, বা `Stack` ব্যবহার করুন
+2. **Exact pixel positioning** - `Positioned` widget ভালো option
+3. **Child কে stretch করতে হবে** - `Expanded`, `Flexible`, বা `Container` ব্যবহার করুন
+4. **Complex layout** - `GridView`, `ListView`, বা custom layout widget ব্যবহার করুন
 
 
