@@ -14,6 +14,28 @@ class PaddingMarginWidget extends StatelessWidget {
         ),
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          Text('Padding Example'),
+          // paddin always space inside
+          Container(
+            // width: 100,
+            // height: 80,
+            color: Colors.blue,
+            padding: EdgeInsets.only(left: 10, right: 10, top: 20, bottom: 50),
+            child: Text('Padding Example'),
+          ),
+          SizedBox(height: 20),
+          // margin always space outside
+          Container(
+            color: Colors.red,
+            width: 100,
+            height: 60,
+            margin: EdgeInsets.all(80),
+            child: Text('Margin Example'),
+          ),
+        ],
+      ),
     );
   }
 }
