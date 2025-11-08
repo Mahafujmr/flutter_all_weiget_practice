@@ -14,7 +14,7 @@ class ColumnWidget extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: Container(
+      body: SizedBox(
         width: 300,
         child: Column(
           /*

@@ -15,6 +15,7 @@ class SizedboxWidget extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
+        // use sizedbox -control height and widht form child widget 
         child: SizedBox(
           height: 100,
           width: 200,
