@@ -17,23 +17,17 @@ class StackWidget extends StatelessWidget {
       body: Container(
         width: double.infinity,
         height: 500,
-        color: Colors.green,
+        color: Colors.purple,
         child: Stack(
-          alignment: Alignment.topLeft,
+          alignment: Alignment.center,
           children: [
             Positioned(
-              bottom: 10,
-              left: 10,
-              child: Container(
-                width: 300,
-                height: 300,
-                color: Colors.amber[800],
-              ),
+              left: 50,
+
+              child: Container(width: 300, height: 250, color: Colors.green),
             ),
-
-            Container(width: 210, height: 210, color: Colors.lightGreenAccent),
-
-            Container(width: 150, height: 150, color: Colors.red),
+            Container(width: 270, height: 200, color: Colors.yellow),
+            Container(width: 200, height: 150, color: Colors.red),
           ],
         ),
       ),
