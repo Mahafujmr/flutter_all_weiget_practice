@@ -5,6 +5,19 @@ class AppbarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('AppBar widget')));
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        title: Text('AppBar'),
+        centerTitle: true,
+        leading: Icon(Icons.home_work),
+        actions: <Widget>[
+          Icon(Icons.notification_add),
+          Icon(Icons.phone),
+          Text('Icon'),
+        ],
+      ),
+      body: Center(child: Text('AppBar widget')),
+    );
   }
 }

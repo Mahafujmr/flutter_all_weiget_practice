@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget_practice/appbar_widget/appbar_widget.dart';
-import 'package:flutter_all_widget_practice/text_widget/text_widget.dart';
 
 void main() {
   runApp(MyApp());
