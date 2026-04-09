@@ -26,7 +26,7 @@ class TextWidget extends StatelessWidget {
           overflow: TextOverflow.visible,
           softWrap: true,
           textDirection: TextDirection.ltr,
-          textScaleFactor: 1,
+
           // control text hight and specing
           strutStyle: StrutStyle(
             fontSize: 30,
