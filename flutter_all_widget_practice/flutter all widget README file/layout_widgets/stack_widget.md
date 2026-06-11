@@ -1,0 +1,177 @@
+# 🧱 Flutter Stack Widget - Complete Notes (বাংলায়)
+
+## 🎯 Stack Widget কাকে বলে?
+
+`Stack` widget ব্যবহার করা হয় **একাধিক widget-কে একটার উপর আরেকটা (overlapping)** করে সাজানোর জন্য।  
+অর্থাৎ, এটি Widgets গুলোকে "layer" আকারে এক জায়গায় রাখে।
+
+👉 সহজভাবে বললে:  
+Stack মানে হচ্ছে “Layers” — যেমন Photoshop-এ একটার উপর একটা লেয়ার থাকে, ঠিক তেমনভাবেই Flutter-এ `Stack` widget child গুলোকে overlay করে রাখে।
+
+---
+
+## 💡 কেন ব্যবহার করা হয়?
+
+- যখন UI তে **একই জায়গায় একাধিক widget রাখতে হয়।**  
+- যেমন: কোনো ছবির উপর Text দেখাতে, Icon-এর উপর Button দিতে, অথবা Card-এর উপরে label বসাতে।  
+- Complex এবং **custom layered UI** তৈরির জন্য।
+
+---
+
+## ⚙️ Stack Widget এর গুরুত্বপূর্ণ Properties 🧩
+
+| Property | কাজ | ব্যাখ্যা |
+|-----------|------|----------|
+| **alignment** | Stack-এর ভিতরের child গুলোর default alignment ঠিক করে | উদাহরণ: `Alignment.center`, `Alignment.topRight` |
+| **textDirection** | Child alignment-এর দিক নির্ধারণ করে (LTR বা RTL) | Default: LTR |
+| **fit** | Stack কীভাবে তার child গুলিকে fit করবে তা নির্ধারণ করে | `StackFit.loose`, `StackFit.expand` ইত্যাদি |
+| **clipBehavior** | Stack-এর সীমার বাইরে child গুলো visible হবে কিনা সেটি নির্ধারণ করে | উদাহরণ: `Clip.none`, `Clip.hardEdge` |
+| **children** | Stack-এর মধ্যে যতগুলো widget রাখতে চাও সেগুলো | List আকারে দেওয়া হয় (যেমন: [Text(), Icon(), Container()]) |
+
+---
+
+## 🧭 Stack-এর ভিতরে Positioned Widget
+
+Stack-এর child গুলো নির্দিষ্ট জায়গায় বসানোর জন্য `Positioned` widget ব্যবহার করা হয়।
+
+| Property | কাজ |
+|-----------|------|
+| **top** | উপরের দিক থেকে কত দূরে থাকবে |
+| **bottom** | নিচের দিক থেকে কত দূরে থাকবে |
+| **left** | বাম দিক থেকে কত দূরে থাকবে |
+| **right** | ডান দিক থেকে কত দূরে থাকবে |
+| **height / width** | Child-এর নির্দিষ্ট height ও width নির্ধারণ করে |
+
+👉 `Positioned` শুধু Stack-এর ভিতরে কাজ করে।
+
+---
+
+## 🧠 কখন Stack Widget ব্যবহার করা উচিত?
+
+✅ যখন এক জায়গায় একাধিক widget রাখতে চাও (overlap প্রয়োজন হয়)।  
+✅ UI তে background image এর উপর text বসাতে চাও।  
+✅ Badge, label, floating icon ইত্যাদি বসাতে চাও।  
+✅ Profile picture এর উপর edit button দিতে চাও।  
+
+---
+
+## 📱 Stack Widget এর ব্যবহার কোথায় হয়?
+
+| ব্যবহার ক্ষেত্র | উদাহরণ |
+|----------------|----------|
+| 🎨 Background image এর উপর text দেখানো | যেমন: Banner বা Card layout |
+| 🔔 Notification badge design | Icon-এর উপরে সংখ্যা বসানো |
+| 🧾 Custom UI overlay | Transparent layer, gradient, loading indicator |
+| 🧍 Profile UI design | Profile picture + Edit button |
+| 📷 Image preview + Overlay | Image-এর উপর caption বা action button |
+
+---
+
+## ⚖️ StackFit এর ধরন ও কাজ
+
+| StackFit | কাজ |
+|-----------|------|
+| **StackFit.loose** | Child যতটা space দরকার ততটাই নেয় |
+| **StackFit.expand** | Stack parent-এর পুরো জায়গা নেয় |
+| **StackFit.passthrough** | Parent থেকে constraints 그대로 নেয় |
+
+---
+
+## 🧾 মনে রাখার Key Points
+
+✅ Stack widget child গুলিকে “order” অনুযায়ী draw করে — **সবচেয়ে শেষের child উপরে থাকে।**  
+✅ Stack widget একসাথে Row/Column এর মতো align এবং overlay layout দুটোই handle করতে পারে।  
+✅ Child-দের নির্দিষ্ট position দিতে চাইলে `Positioned` ব্যবহার করতে হয়।  
+✅ Stack scrollable না, তাই scroll দরকার হলে `SingleChildScrollView` ব্যবহার করো।
+
+---
+
+## 🚀 সংক্ষিপ্ত সারাংশ
+
+| বিষয় | ব্যাখ্যা |
+|-------|----------|
+| **Widget Type** | Layout widget |
+| **Purpose** | Widgets কে একটার উপর একটা (overlap) করে সাজানো |
+| **Main Helper Widget** | `Positioned` |
+| **Common Use Case** | Overlay UI, badges, image + text design |
+| **Important Properties** | `alignment`, `fit`, `clipBehavior`, `children` |
+
+---
+
+## 💬 শেষ কথা
+
+> ✨ Stack widget হলো Flutter-এর অন্যতম শক্তিশালী layout widget,  
+> যা দিয়ে খুব সহজে সুন্দর layered UI তৈরি করা যায়।  
+> কিন্তু অতিরিক্ত overlap ব্যবহার করলে UI জটিল হতে পারে — তাই প্রয়োজন অনুযায়ী ব্যবহার করাই সঠিক।
+
+---
+
+🧾 **Author:** Mohammad Mahfuzur Rahman Tuhin  
+📘 **Widget:** Stack  
+📅 **Topic:** Flutter Layout Widgets
+
+# ⚙️ Flutter Stack Widget Properties Explained (বাংলায়)
+
+এই অংশে আমরা Stack Widget-এর ৩টি সবচেয়ে গুরুত্বপূর্ণ property নিয়ে আলোচনা করব:  
+**alignment**, **fit**, এবং **clipBehavior**।
+
+---
+
+## 🎯 ১️ alignment
+| বিষয় | ব্যাখ্যা |
+|------|-----------|
+| **কাজ** | Stack widget-এর ভিতরের child widget গুলোর default অবস্থান (position) নির্ধারণ করে। |
+| **ডিফল্ট ভ্যালু** | `AlignmentDirectional.topStart` (মানে উপরের বাম কোণায় child থাকে) |
+| **ব্যবহার** | যখন তুমি child গুলোকে Stack-এর ভিতরে center, bottomRight, topCenter ইত্যাদি জায়গায় রাখতে চাও। |
+| **উদাহরণ মান (Values)** | `Alignment.center` → মাঝখানে<br>`Alignment.topRight` → উপরের ডান পাশে<br>`Alignment.bottomLeft` → নিচের বাম পাশে |
+| **Use Case** | UI তে যখন child গুলোকে নির্দিষ্ট alignment-এ সাজাতে হয় (যেমন: banner বা text overlay design)। |
+
+---
+
+## ⚙️ ২️ fit
+| বিষয় | ব্যাখ্যা |
+|------|-----------|
+| **কাজ** | Stack widget-এর ভিতরে থাকা child গুলো কীভাবে জায়গা দখল করবে, সেটা নির্ধারণ করে। |
+| **ডিফল্ট ভ্যালু** | `StackFit.loose` |
+| **মূল ধরন (Types)** |  |
+| `StackFit.loose` | ➤ Child যতটা space দরকার ততটাই নেবে (default)। |
+| `StackFit.expand` | ➤ Stack parent-এর পুরো জায়গা child কে দেয় (full size নেয়)। |
+| `StackFit.passthrough` | ➤ Parent থেকে constraints 그대로 child-এর মধ্যে পাঠায়। |
+| **Use Case** | যখন child-দের flexible বা fixed size দিতে চাও — যেমন full background বা overlay UI তৈরি করতে। |
+
+---
+
+## ✂️ ৩️ clipBehavior
+| বিষয় | ব্যাখ্যা |
+|------|-----------|
+| **কাজ** | Stack-এর সীমার বাইরে যদি কোনো child widget চলে যায়, তাহলে সেটা clip (কেটে দেওয়া) হবে কিনা নির্ধারণ করে। |
+| **ডিফল্ট ভ্যালু** | `Clip.hardEdge` |
+| **মূল ধরন (Types)** |  |
+| `Clip.none` | ➤ কিছুই কাটা হবে না (বাইরে থাকা অংশও দেখা যাবে)। |
+| `Clip.hardEdge` | ➤ Stack সীমার বাইরে যা আছে সেটা কেটে ফেলে। |
+| `Clip.antiAlias` | ➤ Smooth edge সহ কেটে ফেলে (slightly better visuals)। |
+| `Clip.antiAliasWithSaveLayer` | ➤ Smooth clipping + performance heavy (high-quality edges)। |
+| **Use Case** | যখন child Stack-এর সীমা ছাড়িয়ে যেতে পারে, যেমন animation বা overflow effect ব্যবহার করার সময়। |
+
+---
+
+## 🧠 সংক্ষিপ্ত সারাংশ
+
+| Property | কাজ | Default Value | Common Values | ব্যবহার ক্ষেত্র |
+|-----------|------|---------------|----------------|----------------|
+| **alignment** | Child গুলোর অবস্থান নির্ধারণ করে | `AlignmentDirectional.topStart` | `Alignment.center`, `Alignment.topRight` | Child position ঠিক করতে |
+| **fit** | Child গুলো কীভাবে জায়গা নেবে তা নির্ধারণ করে | `StackFit.loose` | `expand`, `loose`, `passthrough` | Responsive layout ও background design এ |
+| **clipBehavior** | Stack-এর বাইরে থাকা child অংশ কাটা হবে কিনা নির্ধারণ করে | `Clip.hardEdge` | `none`, `hardEdge`, `antiAlias` | Overflow বা animation UI এ |
+
+---
+
+## 💬 মনে রাখো:
+✅ `alignment` — child কোথায় থাকবে তা নির্ধারণ করে।  
+✅ `fit` — child কতটা জায়গা নেবে তা ঠিক করে।  
+✅ `clipBehavior` — Stack-এর বাইরে থাকা অংশ দেখানো বা কেটে দেওয়ার কাজ করে।
+
+---
+
+🧾 **Author:** Mohammad Mahfuzur Rahman Tuhin  
+📘 **Widget:** Stack  
+📅 **Topic:** alignment, fit, clipBehavior
