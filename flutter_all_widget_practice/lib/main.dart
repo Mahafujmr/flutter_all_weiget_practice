@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_all_widget_practice/responsive_ui_widget/container_coloum_responsive.dart';
 import 'package:flutter_all_widget_practice/responsive_ui_widget/container_screen.dart';
 
 void main() {
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ContainerScreen(),
+      home: ContainerColoumResponsive(),
     );
   }
 }
