@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/responsive_ui_widget/container_coloum_responsive.dart';
+import 'package:flutter_all_widget_practice/responsive_ui_widget/media_query_part.dart';
 import 'package:flutter_all_widget_practice/responsive_ui_widget/media_query_responsive.dart';
 
 void main() {
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: MediaQueryResponsive(),
+      home: MediaQueryPart(),
     );
   }
 }
