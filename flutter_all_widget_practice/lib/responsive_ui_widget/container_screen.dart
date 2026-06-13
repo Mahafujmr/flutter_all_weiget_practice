@@ -6,7 +6,7 @@ class ContainerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double screenwith = MediaQuery.of(context).size.width;
-     double screenheight = MediaQuery.of(context).size.height;
+     //double screenheight = MediaQuery.of(context).size.height;
     return Scaffold(
       appBar: AppBar(
         title: Text('Media Query'),

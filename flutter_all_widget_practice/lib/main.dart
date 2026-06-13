@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget_practice/responsive_ui_widget/container_coloum_responsive.dart';
-import 'package:flutter_all_widget_practice/responsive_ui_widget/container_screen.dart';
+import 'package:flutter_all_widget_practice/responsive_ui_widget/media_query_responsive.dart';
 
 void main() {
   runApp(MyApp());
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ContainerColoumResponsive(),
+      home: MediaQueryResponsive(),
     );
   }
 }
