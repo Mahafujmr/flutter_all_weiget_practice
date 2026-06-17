@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 
-class MediaQueryResponsiveUi extends StatelessWidget {
+class MediaQueryResponsiveUi extends StatefulWidget {
   const MediaQueryResponsiveUi({super.key});
+
+  @override
+  State<MediaQueryResponsiveUi> createState() => _MediaQueryResponsiveUiState();
+}
+
+class _MediaQueryResponsiveUiState extends State<MediaQueryResponsiveUi> {
+  bool isDesktop (BuildContext context) =>
+     MediaQuery.of(context).size.width => 600;
+
+     bool isMobile (BuildContext context) =>
+     MediaQuery.of(context).size.width => 600;
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +25,26 @@ class MediaQueryResponsiveUi extends StatelessWidget {
         centerTitle: true,
         backgroundColor:Colors.red ,
       ),
-      body: Center(
-        child: Text('Scrren Width - $screenHeight'),
-      ),
+      body: Row(
+        children: [
+          Container(
+            color: Colors.brown,
+            width: 200,
+            child: Center(
+              child: Text('UI'),
+            ),
+          ),
+          Expanded(
+            child: Container(
+              color: Colors.blue,
+              width: 200,
+              child: Center(
+                child: Text('CENTER'),
+              ),
+            ),
+          ),
+        ],
+      )
     );
   }
 }
