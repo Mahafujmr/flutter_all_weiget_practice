@@ -11,38 +11,61 @@ class WrapWidgetTest extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.lightBlue,
       ),
-      body:Wrap(
-        spacing: 3,
-        runSpacing:5,
-        alignment: WrapAlignment.spaceBetween,
-        direction: Axis.horizontal,
-        children: [
-          Container(
-            width: 100,
-            height: 150,
-            color: Colors.red,
-          ),
-          Container(
-            width: 100,
-            height: 150,
-            color: Colors.yellow,
-          ),
-          Container(
-            width: 100,
-            height: 150,
-            color: Colors.blue,
-          ),
-          Container(
-            width: 100,
-            height: 150,
-            color: Colors.black,
-          ),
-          Container(
-            width: 100,
-            height: 150,
-            color: Colors.orange,
-          ),
-        ],
+      body:Container(
+        width: double.infinity,
+        child: Wrap(
+          spacing: 3,
+          runSpacing:5,
+          alignment: WrapAlignment.center,
+          //direction: Axis.vertical,
+          children: [
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.red,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.yellow,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.blue,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.black,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.orange,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.amber,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.green,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.black,
+            ),
+            Container(
+              width: 70,
+              height: 100,
+              color: Colors.yellow,
+            ),
+          ],
+        ),
       ) ,
     );
   }
