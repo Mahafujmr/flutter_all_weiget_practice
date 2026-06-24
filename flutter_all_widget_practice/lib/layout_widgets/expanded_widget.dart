@@ -12,21 +12,25 @@ class ExpandedWidgetTest extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.lightBlue,
       ),
-      body: Row(
+      body: Column(
         children: [
-          Container(
-            width: 100,
-            height: 200,
-            color: Colors.black,
+          Expanded(
+            flex: 2,
+            child: Container(
+              width: double.infinity,
+              height: 200,
+              color: Colors.black,
+            ),
           ),
           Container(
-            width: 100,
+            width: double.infinity,
             height: 200,
             color: Colors.red,
           ),
            Expanded(
+            flex: 1,
              child: Container(
-              width: 100,
+            width: double.infinity,
               height: 200,
               color: Colors.orange,
                        ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget_practice/layout_widgets/expanded_widget.dart';
+import 'package:flutter_all_widget_practice/layout_widgets/wrap_widget.dart';
 import 'package:flutter_all_widget_practice/responsive_ui_widget/media_query_responsive_ui.dart';
 
 void main() {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ExpandedWidgetTest(),
+      home: WrapWidgetTest(),
     );
   }
 }
