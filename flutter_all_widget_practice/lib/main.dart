@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget_practice/layout_widgets/fractionallysizedbox_widget.dart';
+import 'package:flutter_all_widget_practice/text_widget/rich_text_widget.dart';
 void main() {
   runApp(MyApp());
 }
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: FractionallysizedboxWidget(),
+      home: RichTextWidget(),
     );
   }
 }

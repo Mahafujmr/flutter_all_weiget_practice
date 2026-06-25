@@ -8,7 +8,7 @@ class FractionallysizedboxWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Aspect Ratio Widget'),
+        title: Text('Fractionally Size Box Widget'),
         centerTitle: true,
         backgroundColor: Colors.lightBlue,
       ),
