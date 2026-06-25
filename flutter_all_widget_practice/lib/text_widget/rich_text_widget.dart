@@ -13,11 +13,18 @@ class RichTextWidget extends StatelessWidget {
         backgroundColor: Colors.lightBlue,
       ),
       body: Center(
-        child: Text("MD Tuhin Hossain",
-        style: TextStyle(
-          fontSize: 50,
-        ),
-        ),
+        child: RichText(
+          text: TextSpan(
+            text: 'Do you Have any Account?',style: TextStyle(fontSize: 20),
+            children: <TextSpan> [
+              TextSpan(
+              text: 'Sign IN',
+              style: TextStyle(fontSize: 27,color: Colors.red,fontWeight: FontWeight.bold,fontStyle: FontStyle.italic),
+              ),
+              
+            ]
+          ),
+        )
       ),
     );
   }
