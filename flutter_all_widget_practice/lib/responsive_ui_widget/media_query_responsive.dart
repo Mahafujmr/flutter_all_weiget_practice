@@ -16,9 +16,9 @@ class MediaQueryResponsive extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Text('Height'+ MediaQuery.of(context).size.height.toString()),
-            Text('Widght'+ MediaQuery.of(context).size.height.toString()),
-            Text('Aspect Ratio'+ MediaQuery.of(context).size.height.toStringAsFixed(2)),
+            Text('Height${MediaQuery.of(context).size.height}'),
+            Text('Widght${MediaQuery.of(context).size.height}'),
+            Text('Aspect Ratio${MediaQuery.of(context).size.height.toStringAsFixed(2)}'),
             Text( MediaQuery.of(context).size.aspectRatio.toStringAsFixed(2)),
           ],
         ),

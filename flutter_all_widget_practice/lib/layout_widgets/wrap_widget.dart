@@ -11,15 +11,15 @@ class WrapWidgetTest extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.lightBlue,
       ),
-      body:Container(
+      body: SizedBox(
         width: double.infinity,
         child: Wrap(
           spacing: 3,
           runSpacing:5,
-          alignment: WrapAlignment.center,
+          alignment: WrapAlignment.spaceEvenly,
           //direction: Axis.vertical,
           children: [
-            Container(
+           Container(
               width: 70,
               height: 100,
               color: Colors.red,
