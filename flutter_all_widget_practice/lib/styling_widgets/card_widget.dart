@@ -58,7 +58,7 @@ class CardWidget extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(40),
-                        bottomRight: Radius.circular(40)
+                        bottomRight: Radius.circular(40),
 
                       ),
                     ),
