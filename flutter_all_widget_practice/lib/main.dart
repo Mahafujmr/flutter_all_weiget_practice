@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_all_widget_practice/styling_widgets/card_widget.dart';
 import 'package:flutter_all_widget_practice/text_widget/selectable_text_widget.dart';
 void main() {
   runApp(MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: SelectableTextWidget(),
+      home: CardWidget(),
     );
   }
 }
