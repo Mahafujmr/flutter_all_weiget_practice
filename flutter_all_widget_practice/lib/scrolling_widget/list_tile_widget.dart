@@ -46,13 +46,13 @@ class ListTileWidget extends StatelessWidget {
         ),
         ),
         Card(
-          color: Colors.white,
+          color: Colors.deepOrange,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusGeometry.circular(
               30
             ),
             side: BorderSide(
-              color: Colors.red,
+              color: Colors.black,
               width: 2,                      
             ),
           ),
@@ -60,7 +60,7 @@ class ListTileWidget extends StatelessWidget {
           child: ListTile(
           title: Text('MD Tuhin',style: TextStyle(fontSize: 25),),
           subtitle: Text('Flutter Developer'),
-          trailing: Icon(Icons.more_horiz),
+          trailing: Icon(Icons.update),
           leading: CircleAvatar(
             backgroundImage: AssetImage("images/quran.jpeg"),
             backgroundColor: Colors.white,
@@ -69,13 +69,13 @@ class ListTileWidget extends StatelessWidget {
         ),
         ),
         Card(
-          color: Colors.white,
+          color: Colors.red,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadiusGeometry.circular(
               30
             ),
             side: BorderSide(
-              color: Colors.red,
+              color: Colors.white,
               width: 2,                      
             ),
           ),
@@ -83,7 +83,7 @@ class ListTileWidget extends StatelessWidget {
           child: ListTile(
           title: Text('MD Tuhin',style: TextStyle(fontSize: 25),),
           subtitle: Text('Flutter Developer'),
-          trailing: Icon(Icons.more_horiz),
+          trailing: Icon(Icons.upcoming),
           leading: CircleAvatar(
             backgroundImage: AssetImage("images/quran.jpeg"),
             backgroundColor: Colors.white,
