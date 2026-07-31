@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/scrolling_widget/list_tile_widget.dart';
-import 'package:flutter_all_widget_practice/styling_widgets/opacity_widget.dart';
+import 'package:flutter_all_widget_practice/scrolling_widget/list_view_widget.dart';
 void main() {
   runApp(MyApp());
 }
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ListTileWidget(),
+      home: ListViewWidget(),
     );
   }
 }
