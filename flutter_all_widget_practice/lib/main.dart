@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/scrolling_widget/list_view_widget.dart';
+import 'package:flutter_all_widget_practice/scrolling_widget/list_view/list_view_widget.dart';
 void main() {
   runApp(MyApp());
 }
