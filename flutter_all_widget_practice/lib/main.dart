@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_all_widget_practice/scrolling_widget/list_view/listView_builder_widget.dart';
 import 'package:flutter_all_widget_practice/scrolling_widget/list_view/list_view_widget.dart';
 void main() {
   runApp(MyApp());
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ListViewWidget(),
+      home: ListviewBuilderWidget(),
     );
   }
 }

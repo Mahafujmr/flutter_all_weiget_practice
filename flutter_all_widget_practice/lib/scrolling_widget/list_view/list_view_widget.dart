@@ -4,14 +4,14 @@ class ListViewWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(
       appBar: AppBar(
         title: Text('List View Widget'),
         centerTitle: true,
         backgroundColor: Colors.deepOrange,
         elevation: 0.1,
       ),
-      body: ListView(
+      body:  ListView(
         children: [
           Card(
             color: Colors.green,
