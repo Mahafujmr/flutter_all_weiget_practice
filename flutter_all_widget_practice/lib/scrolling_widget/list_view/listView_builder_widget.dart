@@ -7,6 +7,22 @@ class ListviewBuilderWidget extends StatefulWidget {
 }
 
 class _ListviewBuilderWidgetState extends State<ListviewBuilderWidget> {
+   List<String> student =  [
+    "Tuhin",
+    "Toma",
+    "Sormila",
+    "Mahafuj",
+    "Masuma",
+    "Ralib",
+    "Toma",
+    "Sormila",
+    "Mahafuj",
+    "Masuma",
+    "Toma",
+    "Sormila",
+    "Mahafuj",
+    "Masuma",
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,29 +33,42 @@ class _ListviewBuilderWidgetState extends State<ListviewBuilderWidget> {
         elevation: 0.1,
       ),
       body: ListView.builder(
-        itemCount: 20,
+        itemCount: student.length,
         padding: EdgeInsets.all(20),
-       shrinkWrap: false,
-        clipBehavior: Clip.antiAlias,
-        reverse: false,
+      //  shrinkWrap: false,
+      //   clipBehavior: Clip.antiAlias,
+      //   reverse: false,
         itemBuilder: (context ,index){
           return Card(
-            color: Colors.white,
-            elevation: 3,
-            shadowColor: Colors.red,
+            color: Colors.red,
             child: ListTile(
               leading: CircleAvatar(
-                backgroundImage: AssetImage("images/laptop.jpeg"),
+                child: Text("${index+1}"),
               ),
-              title: Text('Md Tuhin Hossain',
-              style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+              title: Text(student[index],
+              style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
               ),
-              subtitle: Text("Flutter Developer"),
-              trailing: Icon(Icons.phone),
+              subtitle: Text("Flutter logo"),
+              trailing: Icon(Icons.arrow_forward),
             ),
           );
+          // return Card(
+          //   color: Colors.white,
+          //   elevation: 3,
+          //   shadowColor: Colors.red,
+          //   child: ListTile(
+          //     leading: CircleAvatar(
+          //       backgroundImage: AssetImage("images/laptop.jpeg"),
+          //     ),
+          //     title: Text('Md Tuhin Hossain',
+          //     style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+          //     ),
+          //     subtitle: Text("Flutter Developer"),
+          //     trailing: Icon(Icons.phone),
+          //   ),
+          // );
 
-      }),
+      },),
     );
   }
 }
