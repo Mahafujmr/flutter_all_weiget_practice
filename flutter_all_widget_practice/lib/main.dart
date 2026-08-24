@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/scrolling_widget/list_view/list_vew_separate.dart';
+import 'package:flutter_all_widget_practice/scrolling_widget/grid_view/grid_view_builder.dart';
 void main() {
   runApp(MyApp());
 }
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: ListVewSeparate(),
+      home: GridViewBuilder(),
     );
   }
 }
