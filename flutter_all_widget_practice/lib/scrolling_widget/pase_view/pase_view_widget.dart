@@ -7,6 +7,9 @@ class PaseViewWidget extends StatefulWidget {
   State<PaseViewWidget> createState() => _PaseViewWidgetState();
 }
 
+final _controller = PageController(
+  initialPage: 0,
+);
 class _PaseViewWidgetState extends State<PaseViewWidget> {
   @override
   Widget build(BuildContext context) {
@@ -17,13 +20,13 @@ class _PaseViewWidgetState extends State<PaseViewWidget> {
         backgroundColor: Colors.yellow,
       ),
       body: PageView(
-        
+        controller: _controller,
         children: [
           Container(
-            color: Colors.red,
+            color: Colors.deepOrange,
           ),
           Container(
-            color: Colors.blue,
+            color: Colors.black,
           ),
           Container(
             color: Colors.orange,

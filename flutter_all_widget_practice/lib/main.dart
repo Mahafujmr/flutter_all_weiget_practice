@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_all_widget_practice/scrolling_widget/grid_view/grid_view_builder.dart';
 import 'package:flutter_all_widget_practice/scrolling_widget/pase_view/pase_view_widget.dart';
 void main() {
   runApp(MyApp());
