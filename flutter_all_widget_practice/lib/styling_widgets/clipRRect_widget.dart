@@ -13,12 +13,8 @@ class CliprrectWidget extends StatelessWidget {
       ),
       body: Center(
         child: ClipRRect(
-          borderRadius: BorderRadius.all(Radius.elliptical(200, 300)),
-          child: Container(
-            color: Colors.brown,
-            width: 300,
-            height: 300,
-          ),
+          borderRadius: BorderRadius.circular(40),
+          child: Image.asset('images/laptop.jpeg',width: 400,height: 200,fit: BoxFit.fill,),
         ),
       ),
     );
