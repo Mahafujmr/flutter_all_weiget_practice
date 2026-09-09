@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widget_practice/scrolling_widget/pase_view/pase_view_widget.dart';
+import 'package:flutter_all_widget_practice/styling_widgets/clipRRect_widget.dart';
 void main() {
   runApp(MyApp());
 }
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
 
       // builder is call back function
       //builder: (context, child) => ,
-      home: PaseViewWidget(),
+      home: CliprrectWidget(),
     );
   }
 }
